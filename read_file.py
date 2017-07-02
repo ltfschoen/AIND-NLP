@@ -22,7 +22,6 @@ def read_files(path):
     # TODO: Read each file using read_file()
     # TODO: Store & return a dict of the form { <filename>: <contents> }
     # Note: <filename> is just the filename (e.g. "hieroglyph.txt") not the full path ("data/hieroglyph.txt")
-    
     file_contents_mapping = {}
     for path in enumerate(files_in_path):
         path = path[1]
