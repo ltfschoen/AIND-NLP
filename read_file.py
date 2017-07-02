@@ -30,6 +30,17 @@ def read_files(path):
     # print(json.dumps(file_contents_mapping, indent=2))
     return file_contents_mapping
 
+    # ALTERNATIVE BY OTHERS
+    # files = glob.glob(path)        
+    # my_dict = dict()
+
+    # for file in files:
+    #     content = read_file(file)        
+    #     filename = os.path.basename(file)
+    #     my_dict[filename] = content
+
+    # return my_dict
+
 def test_run():
     # Test read_file()
     print("Hieroglyph file contents: ", read_file("data/hieroglyph.txt"))
