@@ -17,11 +17,25 @@ PoS tagging, lemmatization, etc. Specifically, `nltk` will throw an error if the
 following Python statement to open the NLTK downloader and select the desired package(s) to install:
 
 ```python
+import nltk
 nltk.download()
 ```
 
+This opens a GUI. DO NOT download everthing. Required files include:
+
+* Models > punkt   (13MB)
+* Corpora > stopwords  (11kB)
+* All Packages > averaged_perceptron_taggers  (2.4MB)
+* All Packages > maxent_ne_chunkers"  (12.8MB)
+* Corpora > Words (740kB)
+* Corpora > wordnet  (10.3MB)
+
+For each of the above, select it and click "Download" ([explained here](https://stackoverflow.com/questions/26693736/nltk-and-stopwords-fail-lookuperror))
+
 You can also download all available NLTK data packages, which includes a number of sample corpora as well, but that may take a while 
 (10+GB).
+
+Note: Install GhostScript: `brew install ghostscript` to avoid error `NLTK was unable to find the gs file!` (reference: https://stackoverflow.com/questions/36942270/nltk-was-unable-to-find-the-gs-file)
 
 ## Run
 
